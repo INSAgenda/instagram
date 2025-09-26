@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Country ranking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            color: #ccc;
+            font-size: 4vw;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        body {
+            background-color: #080025;
+            height: 100vw;
+            overflow: hidden;
+        }
+
+        #title, #title2 {
+            text-align: center;
+            color: #CB6CE6;
+        }
+
+        #title {
+            font-weight: bold;
+            font-size: 8vw;
+            padding-top: 6vw;
+            height: 9vw;
+            line-height: 9vw;
+        }
+
+        #title2 {
+            height: 5vw;
+            line-height: 5vw;
+        }
+
+        #title3 {
+            margin-top: 3vw;
+            font-size: 3vw;
+            width: 100%;
+            color: #aaa;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 80vw;
+        }
+
+        #chart {
+            display: grid;
+            grid-template-columns: min-content auto;
+            grid-template-rows: [GRID-TEMPLATE-ROWS];
+            padding: 2vw;
+        }
+
+        .left {
+            border-right: 1px dashed rgba(203,108,230,0.5);
+            padding-right: 3vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            white-space: nowrap;
+        }
+
+        .name {
+            text-align: right;
+        }
+
+        .bar {
+            margin: 2vw 0;
+            font-size: 3.5vw;
+            height: 4vw;
+            background-color: #CB6CE6;
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px;
+            text-align: center;
+            color: rgb(8,0,37);
+            line-height: 4vw;
+        }
+
+        #additional_info {
+            color: #bbb;
+            font-size: 2vw;
+            text-align: center;
+        }
+
+        #average {
+            width: 0;
+        }
+
+        #average-flexbox {
+            position: relative;
+            width: 96vw;
+            height: 2vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        #average-flexbox>.text {
+            color: #bbb;
+            font-size: 1.9vw;
+            line-height: 2vw;
+            margin: 0 5px;
+        }
+
+        #average-flexbox>.line {
+            flex-grow: 1;
+            border-top: 1px dashed #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">[TITLE]</div>
+    [TITLE2]
+	<main>
+    <div id="chart">
+        [DATA]
+    </div>
+	[TITLE3]
+    <!-- <div id="additional_info">...et 13 autres pays</div> -->
+	<main>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            color: #ccc;
+            font-size: 4vw;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        body {
+            background-color: #080025;
+            height: 100vw;
+            overflow: hidden;
+        }
+
+        #title, #title2 {
+            text-align: center;
+            color: #CB6CE6;
+        }
+
+        #title {
+            font-weight: bold;
+            font-size: 8vw;
+            padding-top: 6vw;
+            height: 9vw;
+            line-height: 9vw;
+        }
+
+        #title2 {
+            height: 5vw;
+            line-height: 5vw;
+        }
+
+        #title3 {
+            margin-top: 3vw;
+            font-size: 3vw;
+            width: 100%;
+            color: #aaa;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 80vw;
+        }
+
+        #chart {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            justify-content: center;
+        }
+
+        .item {
+            width: 8vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .item>span {
+            width: 100%;
+            text-align: center;
+            border-top: 2px solid #555;
+            font-size: [LABEL-FONT-SIZE];
+        }
+
+        .bar-container {
+            height: [CHART-HEIGHT];
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        .bar {
+            background-color: #CB6CE6;
+            width: 7vw;
+        }
+
+        .bar:first-child {
+            border-radius: 1vw 1vw 0 0;
+        }
+
+        .value {
+            font-size: 2.5vw;
+            color: black;
+            width: 100%;
+            text-align: center;
+            margin-top: .5vw;
+        }
+
+        #min-label {
+            position: absolute;
+            color: #777;
+            font-size: 2vw;
+            bottom: 3.6vw;
+            right: 0vw;
+        }
+
+        .higher {
+            position: relative;
+            bottom: 4vw;
+            color: #CB6CE6;
+        }
+
+        #legend {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 3vw;
+            width: 100%;
+        }
+
+        #legend>div {
+            font-size: 3vw;
+            margin-right: 2vw;
+            color: #aaa;
+            display: flex;
+            align-items: center;
+        }
+
+        .legend-box {
+            width: 2vw;
+            height: 2vw;
+            margin: 0 .25vw;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">[TITLE]</div>
+    [TITLE2]
+    <main>
+    <div id="chart">
+        [DATA]
+    </div>
+    [LEGEND]
+    [TITLE3]
+    </main>
+</body>
+</html>

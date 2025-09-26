@@ -1,0 +1,44 @@
+\documentclass[12pt, letterpaper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, total={21cm, 29.7cm}, top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+
+\begin{document}
+
+\begin{center}
+    {\huge Relevé de Notes}
+    \vspace{1cm}
+
+    \textbf{{name} {firstname}}\\
+    ({sid})
+    \vspace{.5cm}
+
+    \begin{longtable}{ p{0.6\textwidth} r r r r }
+        % Table header
+
+        & \textbf{Vous} & \textbf{Classe} & \textbf{Promo} & \textbf{Rang} \\ \hline
+        
+        {output}
+    \end{longtable}
+\end{center}
+
+\vspace{1cm}
+
+Attention : ces notes ne sont pas définitives et pourraient être modifiées par le jury. Ces données sont issues d'un traitement effectué par \href{https://insagenda.fr/}{INSAgenda}, qui n'est pas affilié à l'INSA. Par conséquent, les résultats officiels pourront être différents.
+
+\vspace{1cm}
+
+\begin{flushright}
+    \textit{L'équipe d'\href{https://insagenda.fr/}{INSAgenda}}
+\end{flushright}
+
+\end{document}
